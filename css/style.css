@@ -15,9 +15,8 @@ body{
     width: 200px;
     background-color: rgb(89, 130, 196);
     border-radius: 50%;
+    z-index: 9;
 }
-
-
 
 nav{
     height: 10vh;
@@ -52,8 +51,15 @@ nav{
     font-size: 50px;
 }
 
+.img-bg{
+    background-color: #b00b69;
+    padding: 20px;
+    z-index: 99;   
+}
 
-
+.itWorks{
+    background-color: #d1c;
+}
 
 @media screen and (max-width: 768px) {
     
@@ -90,7 +96,7 @@ nav{
         pointer-events: none;
     }
     .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
+        clip-path: circle(100px at 90% -10%); 
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
 
@@ -107,13 +113,13 @@ nav{
 }
 
 .nav-links li:nth-child(1){
-    transition: all 0.5s ease 0.2s;
+    transition: all 5.5s ease 55s;
 }
 .nav-links li:nth-child(2){
-    transition: all 0.5s ease 0.4s;
+    transition: all 5.5s ease 5.4s;
 }
 .nav-links li:nth-child(3){
-    transition: all 0.5s ease 0.6s;
+    transition: all 5.5s ease 5.6s;
 }
 
 li.fade{
@@ -122,7 +128,9 @@ li.fade{
 
 }
 
-
+h4, button{
+    font-size: 40px;
+}
 /* .form-flex{
     display: flex;
     flex-direction: column;
